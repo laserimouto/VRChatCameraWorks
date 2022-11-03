@@ -15,7 +15,7 @@
 ### Getting Started
 1. Import VRChat SDK3 Worlds & UdonSharp
 2. [Set up layers to match VRChat](https://docs.vrchat.com/docs/creating-your-first-world#step-4---setting-up-the-scene)
-3. Import CameraWorks unitypackage latest release into your project
+3. Import [CameraWorks unitypackage latest release](https://github.com/laserimouto/VRChatCameraWorks/releases/latest) into your project
 4. Open the CameraWorksDemo scene, or drag any of the prefabs into your existing scene
 
 #### Demo Scene Controls
