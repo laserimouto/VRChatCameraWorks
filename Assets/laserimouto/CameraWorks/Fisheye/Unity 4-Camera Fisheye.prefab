@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2333162374501865511}
   m_Layer: 0
-  m_Name: Cameras
+  m_Name: Fisheye Cameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,10 +369,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5200301383384407010}
     m_Modifications:
+    - target: {fileID: 761241382365752301, guid: 439b047f52d0a9a46ae292e4dc4085f1,
+        type: 3}
+      propertyPath: m_Name
+      value: Fisheye Output
+      objectReference: {fileID: 0}
+    - target: {fileID: 761241382365752301, guid: 439b047f52d0a9a46ae292e4dc4085f1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6100676096815314760, guid: 439b047f52d0a9a46ae292e4dc4085f1,
         type: 3}
       propertyPath: m_Name
       value: Render
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100676096815314760, guid: 439b047f52d0a9a46ae292e4dc4085f1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7057715853442773939, guid: 439b047f52d0a9a46ae292e4dc4085f1,
         type: 3}
@@ -428,6 +443,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 179.99998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7430551995321164114, guid: 439b047f52d0a9a46ae292e4dc4085f1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439b047f52d0a9a46ae292e4dc4085f1, type: 3}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1367445936148215240}
   m_Layer: 0
-  m_Name: Cameras
+  m_Name: Fisheye Cameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -404,6 +404,16 @@ PrefabInstance:
       propertyPath: m_Transitions.m_OnCameraLive.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2435977257046276775, guid: e18af165adaf272499104a8289ab53b8,
+        type: 3}
+      propertyPath: m_Name
+      value: Fisheye Output
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435977257046276775, guid: e18af165adaf272499104a8289ab53b8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5380717733753774841, guid: e18af165adaf272499104a8289ab53b8,
         type: 3}
       propertyPath: m_RootOrder
@@ -459,10 +469,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 179.99998
       objectReference: {fileID: 0}
+    - target: {fileID: 5494588093314936856, guid: e18af165adaf272499104a8289ab53b8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9221078455590069762, guid: e18af165adaf272499104a8289ab53b8,
         type: 3}
       propertyPath: m_Name
       value: Render
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221078455590069762, guid: e18af165adaf272499104a8289ab53b8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18af165adaf272499104a8289ab53b8, type: 3}

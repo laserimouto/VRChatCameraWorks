@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7947660476081416313}
   m_Layer: 0
-  m_Name: Cameras
+  m_Name: Fisheye Cameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -446,6 +446,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3215064851026432963}
     m_Modifications:
+    - target: {fileID: 636077149532407274, guid: 1114aeecdd3c57545834686a9d1c6645,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1026636319338927883, guid: 1114aeecdd3c57545834686a9d1c6645,
         type: 3}
       propertyPath: m_RootOrder
@@ -506,6 +511,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Render 180
       objectReference: {fileID: 0}
+    - target: {fileID: 4279730202622022640, guid: 1114aeecdd3c57545834686a9d1c6645,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304040792225714005, guid: 1114aeecdd3c57545834686a9d1c6645,
+        type: 3}
+      propertyPath: m_Name
+      value: Fisheye Output
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304040792225714005, guid: 1114aeecdd3c57545834686a9d1c6645,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1114aeecdd3c57545834686a9d1c6645, type: 3}
 --- !u!4 &393526793367772842 stripped
@@ -521,6 +541,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3215064851026432963}
     m_Modifications:
+    - target: {fileID: 1687067687010282526, guid: 9b65b526a7aab3d49b55740f8a7bbff8,
+        type: 3}
+      propertyPath: m_Name
+      value: Fisheye Output
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687067687010282526, guid: 9b65b526a7aab3d49b55740f8a7bbff8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5282764729068155067, guid: 9b65b526a7aab3d49b55740f8a7bbff8,
         type: 3}
       propertyPath: m_Name
@@ -528,7 +558,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5282764729068155067, guid: 9b65b526a7aab3d49b55740f8a7bbff8,
         type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282764729068155067, guid: 9b65b526a7aab3d49b55740f8a7bbff8,
+        type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856132635156899489, guid: 9b65b526a7aab3d49b55740f8a7bbff8,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8938476696876364864, guid: 9b65b526a7aab3d49b55740f8a7bbff8,
@@ -608,7 +648,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1190234749199119221, guid: 296fecbe8ad86e141b51fc704bb5ff75,
         type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190234749199119221, guid: 296fecbe8ad86e141b51fc704bb5ff75,
+        type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536647058576794991, guid: 296fecbe8ad86e141b51fc704bb5ff75,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2729022531182475150, guid: 296fecbe8ad86e141b51fc704bb5ff75,
@@ -665,6 +715,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 179.99998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5673723702497161168, guid: 296fecbe8ad86e141b51fc704bb5ff75,
+        type: 3}
+      propertyPath: m_Name
+      value: Fisheye Output
+      objectReference: {fileID: 0}
+    - target: {fileID: 5673723702497161168, guid: 296fecbe8ad86e141b51fc704bb5ff75,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 296fecbe8ad86e141b51fc704bb5ff75, type: 3}

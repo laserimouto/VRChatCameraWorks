@@ -158,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2131544612090432246}
   m_Layer: 0
-  m_Name: Cameras
+  m_Name: Fisheye Cameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -446,6 +446,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6863824355360813388}
     m_Modifications:
+    - target: {fileID: 2615816345703062871, guid: 5ce5217325b07b241904ab0205cf1e26,
+        type: 3}
+      propertyPath: m_Name
+      value: Fisheye Output
+      objectReference: {fileID: 0}
+    - target: {fileID: 2615816345703062871, guid: 5ce5217325b07b241904ab0205cf1e26,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4363753341366568743, guid: 5ce5217325b07b241904ab0205cf1e26,
         type: 3}
       propertyPath: m_Transitions.m_OnCameraLive.m_PersistentCalls.m_Calls.Array.size
@@ -480,6 +490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Transitions.m_OnCameraLive.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315331342635259880, guid: 5ce5217325b07b241904ab0205cf1e26,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5705864149799470345, guid: 5ce5217325b07b241904ab0205cf1e26,
         type: 3}
@@ -543,6 +558,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8823873884879241714, guid: 5ce5217325b07b241904ab0205cf1e26,
         type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823873884879241714, guid: 5ce5217325b07b241904ab0205cf1e26,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -565,6 +585,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Render 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086338822356994502, guid: bed9ff8cb3c4f9546a9c68b1fb2ac34c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3003854361157684541, guid: bed9ff8cb3c4f9546a9c68b1fb2ac34c,
         type: 3}
@@ -655,6 +680,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Transitions.m_OnCameraLive.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405637381094023132, guid: bed9ff8cb3c4f9546a9c68b1fb2ac34c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813687803779634531, guid: bed9ff8cb3c4f9546a9c68b1fb2ac34c,
+        type: 3}
+      propertyPath: m_Name
+      value: Fisheye Output
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813687803779634531, guid: bed9ff8cb3c4f9546a9c68b1fb2ac34c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bed9ff8cb3c4f9546a9c68b1fb2ac34c, type: 3}
@@ -726,6 +766,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 179.99998
       objectReference: {fileID: 0}
+    - target: {fileID: 1083655054001883921, guid: 3f61e352a3c827641b2181b416b92673,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4377078524360678667, guid: 3f61e352a3c827641b2181b416b92673,
         type: 3}
       propertyPath: m_Name
@@ -733,7 +778,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4377078524360678667, guid: 3f61e352a3c827641b2181b416b92673,
         type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377078524360678667, guid: 3f61e352a3c827641b2181b416b92673,
+        type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099656726979936686, guid: 3f61e352a3c827641b2181b416b92673,
+        type: 3}
+      propertyPath: m_Name
+      value: Fisheye Output
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099656726979936686, guid: 3f61e352a3c827641b2181b416b92673,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9129766613658080983, guid: 3f61e352a3c827641b2181b416b92673,

@@ -35,14 +35,12 @@ public class CameraAutopilot : UdonSharpBehaviour
         }
         else if (autopilot)
         {
-            Debug.Log("Activate next camera");
             if (randomOrder)
                 target.SendCustomEvent("OnRandomCamera");
             else
                 target.SendCustomEvent("OnNextCamera");
 
             timer = speed;
-            Debug.Log("Set timer=" + timer);
         }
     }
 }

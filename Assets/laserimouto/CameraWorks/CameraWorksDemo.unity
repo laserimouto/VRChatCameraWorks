@@ -426,6 +426,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -498,6 +499,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 963194228}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 4194304
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &1003107988
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,22 +939,22 @@ PrefabInstance:
     - target: {fileID: 2873307373776161544, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.68017805
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2873307373776161544, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.274112
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2873307373776161544, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.33744955
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 2873307373776161544, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2873307373776161544, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
@@ -903,52 +964,52 @@ PrefabInstance:
     - target: {fileID: 2873307373776161544, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2873307373776161544, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000111758695
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2873307373776161547, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: orthographic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873307373776161547, guid: 2b019155912eae244b9f7337cd89a406,
-        type: 3}
-      propertyPath: far clip plane
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873307373776161547, guid: 2b019155912eae244b9f7337cd89a406,
-        type: 3}
-      propertyPath: near clip plane
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2873307373776161547, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
+      propertyPath: far clip plane
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873307373776161547, guid: 2b019155912eae244b9f7337cd89a406,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873307373776161547, guid: 2b019155912eae244b9f7337cd89a406,
+        type: 3}
       propertyPath: orthographic size
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2873307374173205536, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.68017805
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2873307374173205536, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.274112
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2873307374173205536, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.33744955
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 2873307374173205536, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2873307374173205536, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
@@ -958,32 +1019,32 @@ PrefabInstance:
     - target: {fileID: 2873307374173205536, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2873307374173205536, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000111758695
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2873307374173205539, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
       propertyPath: orthographic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873307374173205539, guid: 2b019155912eae244b9f7337cd89a406,
-        type: 3}
-      propertyPath: far clip plane
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873307374173205539, guid: 2b019155912eae244b9f7337cd89a406,
-        type: 3}
-      propertyPath: near clip plane
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2873307374173205539, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
+      propertyPath: far clip plane
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873307374173205539, guid: 2b019155912eae244b9f7337cd89a406,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873307374173205539, guid: 2b019155912eae244b9f7337cd89a406,
+        type: 3}
       propertyPath: orthographic size
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2958710054466517401, guid: 2b019155912eae244b9f7337cd89a406,
         type: 3}
