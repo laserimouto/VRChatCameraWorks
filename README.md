@@ -14,12 +14,15 @@
 
 ### Getting Started
 1. Import VRChat SDK3 Worlds & UdonSharp
-2. [Set up layers to match VRChat](https://docs.vrchat.com/docs/creating-your-first-world#step-4---setting-up-the-scene)
-3. Import [CameraWorks unitypackage latest release](https://github.com/laserimouto/VRChatCameraWorks/releases/latest) into your project
-4. Open the CameraWorksDemo scene, or drag any of the prefabs into your existing scene
+2. (Optional) Import [Cinemachine](https://unity.com/unity/features/editor/art-and-design/cinemachine)
+3. [Set up layers to match VRChat](https://docs.vrchat.com/docs/creating-your-first-world#step-4---setting-up-the-scene)
+4. Import [CameraWorks unitypackage latest release](https://github.com/laserimouto/VRChatCameraWorks/releases/latest) into your project
+5. Open the CameraWorksDemo scene, or drag any of the prefabs into your existing scene
 
 #### Demo Scene Controls
-By default, Alpha '0' key to enable camera output in desktop window. 'B'/'N' to switch between previous/next cameras respectively, and 'H' to enable camera autopilot.
+* Alpha '0' key to enable camera output in desktop window
+* 'B'/'N' to switch between previous/next cameras
+* 'H' to enable camera autopilot
 
 
 ## Features
@@ -79,6 +82,7 @@ CameraWorks has prefabs supporting both [Cinemachine](https://unity.com/unity/fe
 | Disable After Transition | List of additional GameObjects to disable after transition. Used to disable Fisheye cameras when not needed for better performance. |
 | Active Camera | Draws the currently active camera to a RenderTexture. |
 | Fade Target Camera | Draws the incoming fade camera to a RenderTexture. |
+| Active Camera Material | Material used to overlay active camera's RenderTexture. Should match `Active Camera RenderTex`'s material. |
 | Fade Target Material | Material used to overlay incoming fade camera's RenderTexture. Should match `Fade Target RenderTex`'s material. |
 | Active Layer | Layer index for main CinemachineBrain. Should be different from VRChat's layers, as it will be added to the camera's culling mask | 
 | Fade Target Layer | Layer index for incoming camera's CinemachineBrain. Must be different to ActiveLayer. Is also added to the camera's culling mask |
@@ -107,7 +111,6 @@ Cinemachine multicam can be used with 4-/5-camera Fisheye. There is a ready-to-u
 * **Unity Multicam:** Add Post-process Layer to each relevant camera, like normal
 * **Cinemachine Multicam:** Add a single Post-process Layer to `Final Output Camera`
 * **Cinemachine Fade Multicam:** Add Post-process Layers to both `CinemachineBrain Active` & `CinemachineBrain Fade Target`
-* **Fisheye camera:** Add Post-process Layer to the `Fisheye Output` (to avoid artifacts visible around mesh seams for Motion Blur). Don't double-up if using with Cinemachine Multicam.
 
 
 ### Fisheye Border Size

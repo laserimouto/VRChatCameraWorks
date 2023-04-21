@@ -5,9 +5,9 @@
         _Color("Base Color", Color) = (1,1,1,1)
     }
 	SubShader{
-		Tags { "RenderType" = "Opaque" "Queue" = "Transparent" }
+		Tags { "RenderType" = "Transparent" "Queue" = "Transparent" }
 		LOD 100
-		Blend SrcAlpha OneMinusSrcAlpha
+		Blend SrcAlpha DstAlpha, One One
 		Pass {
 			CGPROGRAM
 				#pragma vertex vert
@@ -41,9 +41,7 @@
 				{
 					fixed4 col = tex2D(_MainTex, i.texcoord);
 					col *= _Color;
-					UNITY_APPLY_FOG(i.fogCoord, col);
-					// UNITY_OPAQUE_ALPHA(col.a);
-					return col;
+					return min(col, fixed4(1,1,1,1));
 				}
 			ENDCG
 		}

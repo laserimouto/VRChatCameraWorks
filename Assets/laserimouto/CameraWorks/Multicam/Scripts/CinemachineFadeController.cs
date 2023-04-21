@@ -22,6 +22,7 @@ public class CinemachineFadeController : UdonSharpBehaviour
     [Space(10)]
     public Camera activeCamera;
     public Camera fadeTargetCamera;
+    public Material activeCameraMaterial;
     public Material fadeTargetMaterial;
 
     [Space(10)]
@@ -85,7 +86,9 @@ public class CinemachineFadeController : UdonSharpBehaviour
         if (fadeAmount > 0)
         {
             fadeAmount -= Time.deltaTime;
-            fadeTargetMaterial.color = new Vector4(1f, 1f, 1f, Mathf.Clamp(1f - fadeAmount / fadeTime, 0f, 1f));
+            float alpha = Mathf.Clamp(1f - fadeAmount / fadeTime, 0f, 1f);
+            fadeTargetMaterial.color = new Vector4(1f, 1f, 1f, alpha);
+            activeCameraMaterial.color = new Vector4(1f, 1f ,1f, 1 - alpha);
         }
         else if (Active != FadeTarget)
         {
@@ -116,6 +119,7 @@ public class CinemachineFadeController : UdonSharpBehaviour
         fadeAmount = 0f;
         fadeTargetCamera.enabled = false;
         fadeTargetMaterial.color = new Vector4(1f, 1f, 1f, 0f);
+        activeCameraMaterial.color = new Vector4(1f, 1f, 1f, 1f);
 
         foreach (GameObject gameObject in disableAfterTransition)
             gameObject.SetActive(false);
